@@ -1,6 +1,6 @@
 {
   "name": "simple-redis-service",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A simple Redis wrapper around the ioredis module.",
   "main": "dist/index",
   "module": "dist/index.mjs",
