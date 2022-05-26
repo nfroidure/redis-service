@@ -60,7 +60,7 @@ export default autoProvider(initRedis);
  * @return {Promise<RedisService>}
  * A promise of the Redis service
  * @example
- * import initRedisService from 'redis-service';
+ * import initRedisService from 'simple-redis-service';
  *
  * const jwt = await initRedisService({
  *   REDIS: {

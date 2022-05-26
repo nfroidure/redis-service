@@ -1,5 +1,5 @@
 {
-  "name": "redis-service",
+  "name": "simple-redis-service",
   "version": "0.0.0",
   "description": "A simple Redis wrapper around the ioredis module.",
   "main": "dist/index",
@@ -57,7 +57,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nfroidure/redis-service.git"
+    "url": "git+https://github.com/nfroidure/simple-redis-service.git"
   },
   "author": {
     "name": "Nicolas Froidure",
@@ -66,9 +66,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nfroidure/redis-service/issues"
+    "url": "https://github.com/nfroidure/simple-redis-service/issues"
   },
-  "homepage": "https://github.com/nfroidure/redis-service#readme",
+  "homepage": "https://github.com/nfroidure/simple-redis-service#readme",
   "dependencies": {
     "common-services": "^10.0.2",
     "ioredis": "5.0.5",

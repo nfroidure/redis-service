@@ -17,7 +17,7 @@ Instantiate the Redis service
 
 **Example**  
 ```js
-import initRedisService from 'redis-service';
+import initRedisService from 'simple-redis-service';
 
 const jwt = await initRedisService({
   REDIS: {
