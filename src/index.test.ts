@@ -1,10 +1,12 @@
+import { jest } from '@jest/globals';
 import { constant, Knifecycle } from 'knifecycle';
-import initRedisService from '.';
-import type { RedisService, RedisConfig } from '.';
+import initRedisService from './index.js';
+import type { RedisService, RedisConfig } from './index.js';
+import type { LogService } from 'common-services';
 
 describe('Redis service', () => {
   let $: Knifecycle;
-  const log = jest.fn();
+  const log = jest.fn<LogService>();
 
   beforeEach(() => {
     log.mockReset();

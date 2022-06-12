@@ -1,4 +1,4 @@
-import Redis from 'ioredis';
+import { default as Redis } from 'ioredis';
 import { autoProvider } from 'knifecycle';
 import type { RedisOptions } from 'ioredis';
 import type { Provider } from 'knifecycle';
@@ -62,7 +62,7 @@ export default autoProvider(initRedis);
  * @example
  * import initRedisService from 'simple-redis-service';
  *
- * const jwt = await initRedisService({
+ * const redis = await initRedisService({
  *   REDIS: {
  *     host: 'localhost',
  *     port: 6379,

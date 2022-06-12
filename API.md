@@ -19,7 +19,7 @@ Instantiate the Redis service
 ```js
 import initRedisService from 'simple-redis-service';
 
-const jwt = await initRedisService({
+const redis = await initRedisService({
   REDIS: {
     host: 'localhost',
     port: 6379,
