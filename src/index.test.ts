@@ -1,4 +1,4 @@
-import { jest } from '@jest/globals';
+import { describe, beforeEach, test, jest, expect } from '@jest/globals';
 import { constant, Knifecycle } from 'knifecycle';
 import initRedisService from './index.js';
 import type { RedisService, RedisConfig } from './index.js';
@@ -22,7 +22,7 @@ describe('Redis service', () => {
     $.register(initRedisService);
   });
 
-  it('should init well', async () => {
+  test('should init well', async () => {
     const { log, redis } = (await $.run(['log', 'redis'])) as {
       redis: RedisService;
       log: any;
@@ -39,12 +39,12 @@ describe('Redis service', () => {
     await $.destroy();
 
     expect(log.mock.calls).toMatchInlineSnapshot(`
-      Array [
-        Array [
+      [
+        [
           "warning",
           "🏧 - Redis Service initialized!",
         ],
-        Array [
+        [
           "warning",
           "🔌 - Quitting Redis server...",
         ],
