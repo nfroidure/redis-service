@@ -7,8 +7,8 @@
 # simple-redis-service
 > A simple Redis wrapper around the ioredis module.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nfroidure/simple-redis-service/blob/master/LICENSE)
-[![Coverage Status](https://coveralls.io/repos/github/nfroidure/simple-redis-service/badge.svg?branch=master)](https://coveralls.io/github/nfroidure/simple-redis-service?branch=master)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nfroidure/simple-redis-service/blob/main/LICENSE)
+[![Coverage Status](https://coveralls.io/repos/github/nfroidure/simple-redis-service/badge.svg?branch=main)](https://coveralls.io/github/nfroidure/simple-redis-service?branch=main)
 
 
 [//]: # (::contents:start)
@@ -60,4 +60,4 @@ const value = await redis.get('my_key');
 - [Nicolas Froidure](http://insertafter.com/en/index.html)
 
 # License
-[MIT](https://github.com/nfroidure/simple-redis-service/blob/master/LICENSE)
+[MIT](https://github.com/nfroidure/simple-redis-service/blob/main/LICENSE)
