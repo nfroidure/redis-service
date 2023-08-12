@@ -1,4 +1,4 @@
-import { default as Redis } from 'ioredis';
+import { Redis } from 'ioredis';
 import { autoProvider } from 'knifecycle';
 import type { RedisOptions } from 'ioredis';
 import type { Provider } from 'knifecycle';

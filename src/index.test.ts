@@ -23,9 +23,8 @@ describe('Redis service', () => {
   });
 
   test('should init well', async () => {
-    const { log, redis } = (await $.run(['log', 'redis'])) as {
+    const { redis } = (await $.run(['log', 'redis'])) as {
       redis: RedisService;
-      log: any;
     };
 
     expect(typeof redis.get).toEqual('function');
