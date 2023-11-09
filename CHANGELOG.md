@@ -1,3 +1,7 @@
+## [4.0.2](https://github.com/nfroidure/simple-redis-service/compare/v4.0.1...v4.0.2) (2023-11-09)
+
+
+
 ## [4.0.1](https://github.com/nfroidure/simple-redis-service/compare/v4.0.0...v4.0.1) (2023-08-20)
 
 
