@@ -8,7 +8,6 @@
 > A simple Redis wrapper around the ioredis module.
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nfroidure/simple-redis-service/blob/main/LICENSE)
-[![Coverage Status](https://coveralls.io/repos/github/nfroidure/simple-redis-service/badge.svg?branch=main)](https://coveralls.io/github/nfroidure/simple-redis-service?branch=main)
 
 
 [//]: # (::contents:start)

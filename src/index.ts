@@ -12,23 +12,17 @@ The `redis` service wraps ioredis to make it work
 */
 
 export type RedisEnv<
-  T extends string extends T
-    ? never
-    : string = typeof DEFAULT_REDIS_PASSWORD_ENV_NAME,
+  T extends string = typeof DEFAULT_REDIS_PASSWORD_ENV_NAME,
 > = Record<T | 'REDIS_HOST' | 'REDIS_PORT', string>;
 export type RedisService = InstanceType<typeof Redis>;
 export type RedisConfig<
-  T extends string extends T
-    ? never
-    : string = typeof DEFAULT_REDIS_PASSWORD_ENV_NAME,
+  T extends string = typeof DEFAULT_REDIS_PASSWORD_ENV_NAME,
 > = {
   REDIS?: RedisOptions;
   REDIS_PASSWORD_ENV_NAME?: T;
 };
 export type RedisDependencies<
-  T extends string extends T
-    ? never
-    : string = typeof DEFAULT_REDIS_PASSWORD_ENV_NAME,
+  T extends string = typeof DEFAULT_REDIS_PASSWORD_ENV_NAME,
 > = RedisConfig<T> & {
   ENV: RedisEnv<T>;
   log: LogService;
@@ -74,9 +68,7 @@ export default autoProvider(initRedis);
  * const value = await redis.get('my_key');
  */
 async function initRedis<
-  T extends string extends T
-    ? never
-    : string = typeof DEFAULT_REDIS_PASSWORD_ENV_NAME,
+  T extends string = typeof DEFAULT_REDIS_PASSWORD_ENV_NAME,
 >({
   REDIS = DEFAULT_REDIS_OPTIONS,
   REDIS_PASSWORD_ENV_NAME = DEFAULT_REDIS_PASSWORD_ENV_NAME as T,
