@@ -1,5 +1,5 @@
 import { Redis } from 'ioredis';
-import { autoProvider } from 'knifecycle';
+import { autoProvider, location } from 'knifecycle';
 import type { RedisOptions } from 'ioredis';
 import type { Provider } from 'knifecycle';
 import type { LogService } from 'common-services';
@@ -34,7 +34,7 @@ export const DEFAULT_REDIS_PASSWORD_ENV_NAME = 'REDIS_PASSWORD';
 
 // Docs: https://github.com/luin/ioredis/blob/master/API.md
 
-export default autoProvider(initRedis);
+export default location(autoProvider(initRedis), import.meta.url);
 
 /**
  * Instantiate the Redis service
