@@ -1,3 +1,12 @@
+# [5.1.0](https://github.com/nfroidure/simple-redis-service/compare/v5.0.0...v5.1.0) (2024-12-04)
+
+
+### Features
+
+* **core:** add the initializer location to the export ([f00c5d8](https://github.com/nfroidure/simple-redis-service/commit/f00c5d8395ebe9f40b4d642894e1cc308d872672))
+
+
+
 # [5.0.0](https://github.com/nfroidure/simple-redis-service/compare/v4.0.4...v5.0.0) (2024-12-04)
 
 
